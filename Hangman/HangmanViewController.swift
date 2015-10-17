@@ -10,6 +10,23 @@ import UIKit
 
 class HangmanViewController: UIViewController {
 
+    @IBOutlet weak var guess: UITextField!
+    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var correct: UILabel!
+    @IBOutlet weak var incorrect: UILabel!
+    
+    @IBAction func newGame(sender: AnyObject) {
+        
+    }
+    
+    @IBAction func guessPressed(sender: AnyObject) {
+        if guess.text == "" {
+            return
+        }
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
